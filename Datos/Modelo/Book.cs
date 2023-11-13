@@ -25,6 +25,6 @@ namespace ChambaOAEA.Datos.Modelo
 
         public string CoverUrl { get; set; }
         
-        public DateTime dateTime { get; set; }
+        public DateTime DateAdded { get; set; }
     }
 }
