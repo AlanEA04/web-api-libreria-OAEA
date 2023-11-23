@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ChambaOAEA.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231106201301_InitialDataBaseMigration")]
+    [Migration("20231123144216_InitialDataBaseMigration")]
     partial class InitialDataBaseMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

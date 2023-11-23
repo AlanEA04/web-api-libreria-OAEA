@@ -61,6 +61,7 @@ namespace ChambaOAEA
             {
                 endpoints.MapControllers();
             });
+            AppDbInitialer.Seed(app);
         }
     }
 }
