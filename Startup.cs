@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ChambaOAEA.Datos.Modelo.Services;
 
 namespace ChambaOAEA
 {
@@ -35,6 +36,9 @@ namespace ChambaOAEA
             services.AddControllers();
             //CONFIguardar DBContext  con Sql
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
+
+            // Configuarar el servicio para que pueda ser usado
+            services.AddTransient<BooksServices>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ChambaOAEA", Version = "v1" });
